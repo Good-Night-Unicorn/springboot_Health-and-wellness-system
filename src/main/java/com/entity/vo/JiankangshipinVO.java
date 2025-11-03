@@ -1,0 +1,247 @@
+package com.entity.vo;
+
+import com.entity.JiankangshipinEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 健康视频
+ * @author 
+ * @email 
+ * @date 2025-04-11 22:16:35
+ */
+public class JiankangshipinVO  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 视频封面
+	 */
+	
+	private String shipinfengmian;
+		
+	/**
+	 * 视频类型
+	 */
+	
+	private String shipinleixing;
+		
+	/**
+	 * 视频简介
+	 */
+	
+	private String shipinjianjie;
+		
+	/**
+	 * 视频播放
+	 */
+	
+	private String shipinbofang;
+		
+	/**
+	 * 发布日期
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date faburiqi;
+		
+	/**
+	 * 赞
+	 */
+	
+	private Integer thumbsupnum;
+		
+	/**
+	 * 踩
+	 */
+	
+	private Integer crazilynum;
+		
+	/**
+	 * 最近点击时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date clicktime;
+		
+	/**
+	 * 点击次数
+	 */
+	
+	private Integer clicknum;
+		
+	/**
+	 * 收藏数
+	 */
+	
+	private Integer storeupnum;
+				
+	
+	/**
+	 * 设置：视频封面
+	 */
+	 
+	public void setShipinfengmian(String shipinfengmian) {
+		this.shipinfengmian = shipinfengmian;
+	}
+	
+	/**
+	 * 获取：视频封面
+	 */
+	public String getShipinfengmian() {
+		return shipinfengmian;
+	}
+				
+	
+	/**
+	 * 设置：视频类型
+	 */
+	 
+	public void setShipinleixing(String shipinleixing) {
+		this.shipinleixing = shipinleixing;
+	}
+	
+	/**
+	 * 获取：视频类型
+	 */
+	public String getShipinleixing() {
+		return shipinleixing;
+	}
+				
+	
+	/**
+	 * 设置：视频简介
+	 */
+	 
+	public void setShipinjianjie(String shipinjianjie) {
+		this.shipinjianjie = shipinjianjie;
+	}
+	
+	/**
+	 * 获取：视频简介
+	 */
+	public String getShipinjianjie() {
+		return shipinjianjie;
+	}
+				
+	
+	/**
+	 * 设置：视频播放
+	 */
+	 
+	public void setShipinbofang(String shipinbofang) {
+		this.shipinbofang = shipinbofang;
+	}
+	
+	/**
+	 * 获取：视频播放
+	 */
+	public String getShipinbofang() {
+		return shipinbofang;
+	}
+				
+	
+	/**
+	 * 设置：发布日期
+	 */
+	 
+	public void setFaburiqi(Date faburiqi) {
+		this.faburiqi = faburiqi;
+	}
+	
+	/**
+	 * 获取：发布日期
+	 */
+	public Date getFaburiqi() {
+		return faburiqi;
+	}
+				
+	
+	/**
+	 * 设置：赞
+	 */
+	 
+	public void setThumbsupnum(Integer thumbsupnum) {
+		this.thumbsupnum = thumbsupnum;
+	}
+	
+	/**
+	 * 获取：赞
+	 */
+	public Integer getThumbsupnum() {
+		return thumbsupnum;
+	}
+				
+	
+	/**
+	 * 设置：踩
+	 */
+	 
+	public void setCrazilynum(Integer crazilynum) {
+		this.crazilynum = crazilynum;
+	}
+	
+	/**
+	 * 获取：踩
+	 */
+	public Integer getCrazilynum() {
+		return crazilynum;
+	}
+				
+	
+	/**
+	 * 设置：最近点击时间
+	 */
+	 
+	public void setClicktime(Date clicktime) {
+		this.clicktime = clicktime;
+	}
+	
+	/**
+	 * 获取：最近点击时间
+	 */
+	public Date getClicktime() {
+		return clicktime;
+	}
+				
+	
+	/**
+	 * 设置：点击次数
+	 */
+	 
+	public void setClicknum(Integer clicknum) {
+		this.clicknum = clicknum;
+	}
+	
+	/**
+	 * 获取：点击次数
+	 */
+	public Integer getClicknum() {
+		return clicknum;
+	}
+				
+	
+	/**
+	 * 设置：收藏数
+	 */
+	 
+	public void setStoreupnum(Integer storeupnum) {
+		this.storeupnum = storeupnum;
+	}
+	
+	/**
+	 * 获取：收藏数
+	 */
+	public Integer getStoreupnum() {
+		return storeupnum;
+	}
+			
+}
